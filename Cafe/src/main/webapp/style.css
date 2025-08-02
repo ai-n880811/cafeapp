@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Arial', sans-serif;   /* 全体のフォントをArial系に指定。すっきりした印象に */
+  background-color: #f2e6d9;   /* ナチュラルな薄いベージュの背景色。やわらかい雰囲気 */
+  color: #333;   /* テキストの色を濃いグレーに（真っ黒より目に優しい） */
+  padding: 20px;   /* 画面の端からの余白を確保 */
+  margin: 0;   /* ブラウザのデフォルト余白をリセット */
+}
+
+/* ───── ヘッダー部分 ───── */
+
+#header {
+  background-color: #5a3e1b;   /* ヘッダーの背景色を濃い茶色に。カフェ風 */
+  padding: 10px;   /* 上下左右に10pxの内側余白を設定 */
+  color: white;   /* ヘッダー内の文字色を白に */
+}
+
+#header a {
+  color: white;   /* リンク文字も白で統一 */
+  text-decoration: none;   /* 下線をなくしてすっきり見せる */
+  margin-right: 10px;   /* リンク同士の間隔をあける */
+}
+
+#header a:hover {
+  text-decoration: underline;   /* ホバー時に下線を表示してクリック可能感を出す */
+}
+
+/* ───── 見出し ───── */
+
+h2 {
+  color: #6b4c3b;   /* サブタイトルのような見出しの色。落ち着いた茶色 */
+}
+
+/* ───── フォーム全体 ───── */
+
+form {
+  margin-bottom: 20px;   /* 下に余白を追加。次の要素との間隔確保 */
+}
+
+/* ───── テキスト入力欄 ───── */
+
+input[type="text"] {
+  border: 1.5px solid #ccc;   /* 少し濃いめのグレーで枠線を表示 */
+  border-radius: 12px;   /* 角を丸くしてやわらかい印象に */
+  padding: 8px 12px;   /* 上下8px、左右12pxの内側余白 */
+  background-color: #fff;   /* 背景は白で清潔感を出す */
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);   /* うっすら影をつけて立体感を出す */
+  font-size: 1em;   /* 標準の文字サイズにする */
+  transition: border-color 0.3s ease;   /* 枠線の色がスムーズに変わるように */
+}
+
+input[type="text"]:focus {
+  border-color: #a67c52;   /* 入力中の枠線をカフェ風ブラウンに変える */
+  outline: none;   /* ブラウザ標準の青枠を消す */
+  box-shadow: 0 0 8px rgba(166,124,82,0.7);   /* フォーカス時に少し強調した影を出す */
+}
+
+/* ───── 送信ボタン ───── */
+
+input[type="submit"] {
+  margin: 8px 0;   /* 上下に8pxのマージン。余白を取る */
+  border: 2px solid white;   /* 白の枠線でアクセントをつける */
+  border-radius: 12px;   /* ボタンも角丸にして統一感を出す */
+  background-color: #a67c52;   /* カフェっぽい落ち着いたブラウン背景 */
+  color: white;   /* ボタンの文字色を白に */
+  padding: 8px 16px;   /* クリックしやすいように余白を広めに */
+  cursor: pointer;   /* カーソルをポインターにしてボタンっぽく */
+  font-size: 1em;   /* ボタンの文字も標準サイズで */
+  transition: background-color 0.3s ease, border-color 0.3s ease;   /* ホバー時の変化をなめらかに */
+  display: inline-block;   /* テキストサイズにあわせた幅で表示 */
+  width: auto;   /* 幅を自動で調整（親要素いっぱいにはしない） */
+}
+
+input[type="submit"]:hover {
+  background-color: #8c6a40;   /* ホバー時に少し濃いブラウンに */
+  border-color: #f0e6d2;   /* ホバー時の枠線を明るくしてふわっと感を演出 */
+}
