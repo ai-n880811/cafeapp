@@ -10,9 +10,9 @@ Java Servlet と JSP を使い、セッションでカート管理を行って�
 
 
 ## 使用技術・開発環境
-IDE: Eclipse IDE for Java Developers 2024-12 (4.34.0)
-Java: Java SE 21
-サーバー: Apache Tomcat 10.0.27（Servlet 5.0対応）
+- IDE: Eclipse IDE for Java Developers 2024-12 (4.34.0)
+- Java: Java SE 21
+- サーバー: Apache Tomcat 10.0.27（Servlet 5.0対応）
 
 
 
